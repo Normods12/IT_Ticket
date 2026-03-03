@@ -72,13 +72,9 @@ public class TicketController {
         return ticketService.getTicketsByStatus(status);
     }
 
-    @GetMapping("/ticket/filter/p")
+    @GetMapping("/tickets/filter/p")
     public List<GetTickets> getTicketsByPriority(@RequestParam("priority")  String priority){
         return ticketService.getTicketsByPriority(priority);
     }
-
-
-
-
 
 }

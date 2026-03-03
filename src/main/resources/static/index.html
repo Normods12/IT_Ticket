@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>It Ticket Management System</title>
+</head>
+<body>
+<h1> It Ticket Management System</h1>
+
+<h1> User View</h1>
+
+<h2>Add User</h2>
+<p> Enter user name</p>
+<input type="text" placeholder="Name" id="username">
+<p> Enter user email</p>
+<input type="text" placeholder="Email" id="email">
+<p> Enter user Role</p>
+<input type="text" placeholder="Role" id="role">
+<button id="addUser">Add User</button>
+<h2> All Users</h2>
+
+<p id="all_users"> </p>
+
+<h2>Add Ticket</h2>
+
+<p> Enter Ticket Description</p>
+<input type="text" placeholder="desc" id="description">
+<p> Enter user id</p>
+<input type="text" placeholder="Id" id="creator_id">
+<button id="addTicket">Add Ticket</button>
+
+<h2> View Ticket By Number</h2>
+<p> Enter ticket id</p>
+<input type="text" placeholder="Id" id="ticketId">
+<button id="userTickets">Search</button>
+<div id="ticketDisplay" style="margin-top: 15px; border: 1px solid #ccc; padding: 10px; min-height: 50px;">
+    Ticket details will appear here...
+</div>
+<h1> Support View </h1>
+
+<h2> View Unassigned Tickets</h2>
+
+<button id="staffTickets">Search</button>
+<div id="ticketDisplayStaff" style="margin-top: 15px; border: 1px solid #ccc; padding: 10px; min-height: 50px;">
+    Ticket details will appear here...
+</div>
+
+<h2> Assign Ticket</h2>
+
+<input type="text" id="assignTicketId" placeholder="Ticket ID">
+<input type="text" id="assignUserId" placeholder="User ID">
+<button id="assignTicket">Assign</button>
+
+<h2> Update Ticket Status and Priority</h2>
+<input type="text" id="updateTicketId" placeholder="Ticket Id">
+<input type="text" id="updateStatus" placeholder="Enter Status">
+<input type="text" id="updatePriority" placeholder="Enter Priority">
+<button id="updateTicket">Assign</button>
+
+
+<h1> Admin View</h1>
+
+<h2> View all Tickets</h2>
+<button id="adminAllTickets">View All Tickets</button>
+<div id="allTicketDiv" style="margin-top: 15px; border: 1px solid #ccc; padding: 10px; min-height: 50px;">
+    Ticket details will appear here...
+</div>
+<h2> View Tickets By Status</h2>
+<input type="text" id="byStatus" placeholder="Enter Status">
+<button id="adminStatusTickets">View  Tickets By Status</button>
+<div id="statusTicketDiv" style="margin-top: 15px; border: 1px solid #ccc; padding: 10px; min-height: 50px;">
+    Ticket details will appear here...
+</div>
+
+<h2> View Tickets By Priority </h2>
+<input type="text" id="byPriority" placeholder="Enter Priority">
+<button id="adminPriorityTickets">View  Tickets By Priority</button>
+<div id="priorityTicketDiv" style="margin-top: 15px; border: 1px solid #ccc; padding: 10px; min-height: 50px;">
+    Ticket details will appear here...
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
